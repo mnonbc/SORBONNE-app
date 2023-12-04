@@ -1,21 +1,161 @@
 body {
-  width: 1080px;
-  height: 1920px;
+  height: 100%;
+  width: auto;
   /*background-repeat: no-repeat;
   background-origin: content-box;*/
 }
 
+h1{
+  color: #000;
+  text-align: center;
+  font-family: Lora;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+h2{
+  color: #000;
+  text-align: center;
+  font-family: Lora;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+h3{
+  color: #000;
+  text-align: center;
+  font-family: Lora;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+p{
+  width: 271px;
+  height: 59px;
+  flex-shrink: 0;
+  color: #000;
+  text-align: center;
+  font-family: Lora;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* ---- DEBUT ------*/
+
+
+#debut{
+  height: 100vh;
+  background-image: url('img/fond-debut-v2.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.debutitems{
+  position: relative;
+  top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.sous-titre-debut{
+  position: relative;
+  top: -20px;
+}
+
+.bouton-debut{
+  width: 121px;
+  height: 31px;
+  flex-shrink: 0;
+  position: relative;
+  top: 60px;
+  background-color: black;
+  border-radius: 33px;
+  text-align: center;
+  font-family: Lora;
+  color: #FFF;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.debutitems-2{
+  position: relative;
+  top: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.liens-phyphox{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logos-debut{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.phyphox-liens-ecrits{
+  width:250px;
+  height: 33px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bouton-suite{
+  width: 121px;
+  height: 31px;
+  position: relative;
+  top: 60px;
+  text-align: center;
+  font-family: Lora;
+  color: #000;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  background-image: url('img/flèche.png');
+  background-repeat: no-repeat;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-shrink: 0;
+}
+
+/* ---- ACCUEIL ------*/
+
 #accueil{
-  width: 1080px;
-  height: 1920px;
+  height: 100%;
   background-image: url('img/2.2.jpg');
   background-size: cover;
   background-position: center;
 }
 
-h1{
-  font-family: Lora;
-}
 
 #box{
   height: 100%;
