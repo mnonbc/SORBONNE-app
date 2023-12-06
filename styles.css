@@ -9,11 +9,25 @@ body {
     /* Styles spécifiques pour les appareils mobiles */
     /* Par exemple, augmenter la taille des polices ou ajuster les marges/paddings */
 }
+
+/* Définition d'une animation de fondu */
+@keyframes fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Appliquer l'animation aux éléments */
+.page-transition {
+  animation: fade 2s ease-in-out;
+  height: 100vh;
+}
+
+
 h1{
   color: #000;
   text-align: center;
   font-family: Lora;
-  font-size: 24px;
+  font-size: 25px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -23,8 +37,8 @@ h2{
   color: #000;
   text-align: center;
   font-family: Lora;
-  font-size: 13px;
-  font-style: normal;
+  font-size: 14px;
+  font-style: italic;
   font-weight: 400;
   line-height: normal;
 }
@@ -33,7 +47,7 @@ h3{
   color: #000;
   text-align: center;
   font-family: Lora;
-  font-size: 13px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -46,7 +60,7 @@ p{
   color: #000;
   text-align: center;
   font-family: Lora;
-  font-size: 13px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -68,11 +82,21 @@ a{
 
 .debutitems{
   position: relative;
-  top: 8%;
+  top: 20%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+}
+
+.debutitems img{
+  position: relative;
+  top: -60px;
+}
+
+.debutitems p{
+  position: relative;
+  top: -40px;
 }
 
 .sous-titre-debut{
@@ -84,14 +108,12 @@ a{
   width: 121px;
   height: 31px;
   flex-shrink: 0;
-  position: relative;
-  top: 60px;
   background-color: black;
   border-radius: 33px;
   text-align: center;
   font-family: Lora;
   color: #FFF;
-  font-size: 13px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -104,7 +126,7 @@ a{
 .bouton-debut a{
   font-family: Lora;
   color: #FFF;
-  font-size: 13px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -113,7 +135,7 @@ a{
 
 .debutitems-2{
   position: relative;
-  top: 100px;
+  top: 20%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -136,49 +158,128 @@ a{
   align-items: center;
 }
 
+.logo-apple{
+  position: relative;
+  left:5px;
+}
+
 .phyphox-liens-ecrits{
-  width:250px;
+  width:260px;
   height: 33px;
   flex-shrink: 0;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
 .bouton-suite{
+  position: relative;
+  top: 185px;
   width: 121px;
   height: 31px;
-  position: relative;
-  top: 160px;
+  flex-shrink: 0;
+  background-color: rgba(0,0,0,0.00);
+  border-radius: 33px;
+  border: 1px solid #000;
   text-align: center;
   font-family: Lora;
   color: #000;
-  font-size: 13px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: center;
   flex-shrink: 0;
 }
 
 .bouton-suite a {
   font-family: Lora;
   color: #000;
-  font-size: 13px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   text-decoration: none;
 }
 
-.bouton-suite a .fleche-image {
-  width: 20px;
-  height: auto;
-  vertical-align: middle;
-  margin-left: 5px;
+.lien-document-phyphox{
+  position: relative;
+  top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bouton-suite2{
+  position: relative;
+  top: 62px;
+  width: 121px;
+  height: 31px;
+  flex-shrink: 0;
+  background-color: rgba(0,0,0,0.00);
+  border-radius: 33px;
+  border: 1px solid #000;
+  text-align: center;
+  font-family: Lora;
+  color: #000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.bouton-suite2 a {
+  font-family: Lora;
+  color: #000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration: none;
+}
+
+#debut4{
+  height: 100vh;
+  background-image: url('img/fond-debut-part2-v2.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.debutitems-4{
+  position: relative;
+  top: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.debutitems-4 h1{
+  color: #FFF;
+  text-align: center;
+  font-family: Lora;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.debutitems-4 h2{
+  color: #FFF;
+  text-align: center;
+  font-family: Lora;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 600;
+  line-height: normal;
 }
 
 /* ---- ACCUEIL ------*/

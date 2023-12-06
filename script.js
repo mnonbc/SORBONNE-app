@@ -1,3 +1,6 @@
+
+
+
 function vérifierNombre() {
   // Récupérer la valeur entrée par l'utilisateur
   var nombre = parseInt(document.getElementById("numberInput").value);
