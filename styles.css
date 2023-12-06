@@ -5,6 +5,10 @@ body {
   background-origin: content-box;*/
 }
 
+@media only screen and (max-width: 600px) {
+    /* Styles spécifiques pour les appareils mobiles */
+    /* Par exemple, augmenter la taille des polices ou ajuster les marges/paddings */
+}
 h1{
   color: #000;
   text-align: center;
@@ -48,6 +52,10 @@ p{
   line-height: normal;
 }
 
+a{
+  text-decoration: none;
+}
+
 /* ---- DEBUT ------*/
 
 
@@ -60,7 +68,7 @@ p{
 
 .debutitems{
   position: relative;
-  top: 80px;
+  top: 8%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -93,9 +101,19 @@ p{
   flex-shrink: 0;
 }
 
+.bouton-debut a{
+  font-family: Lora;
+  color: #FFF;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration: none;
+}
+
 .debutitems-2{
   position: relative;
-  top: 150px;
+  top: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -103,6 +121,8 @@ p{
 }
 
 .liens-phyphox{
+  position: relative;
+  top: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -130,7 +150,7 @@ p{
   width: 121px;
   height: 31px;
   position: relative;
-  top: 60px;
+  top: 160px;
   text-align: center;
   font-family: Lora;
   color: #000;
@@ -138,13 +158,27 @@ p{
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  background-image: url('img/flèche.png');
-  background-repeat: no-repeat;
-  flex-shrink: 0;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   flex-shrink: 0;
+}
+
+.bouton-suite a {
+  font-family: Lora;
+  color: #000;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration: none;
+}
+
+.bouton-suite a .fleche-image {
+  width: 20px;
+  height: auto;
+  vertical-align: middle;
+  margin-left: 5px;
 }
 
 /* ---- ACCUEIL ------*/
