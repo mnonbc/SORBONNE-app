@@ -299,6 +299,117 @@ a{
 
 }
 
+.container{
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+#menu{
+  height: 10px;
+  width: 10px;
+  margin: 50px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  z-index: 4;
+
+  border-radius: 50%;
+
+  transition:border-radius .3s linear;
+  -moz-transition:border-radius .3s linear;
+  -webkit-transition:border-radius .3s linear;
+}
+
+
+#menu.fade{
+  border-radius: 0%;
+}
+
+
+.panneau{
+  position: absolute;
+  height: 100%;
+  margin: 0px;
+}
+
+#panneau1 {
+  z-index: 1;
+  width: 80px;
+  background-image: url('img/panneau1.png');
+
+
+  transition: width .3s linear;
+  -moz-transition:width .3s linear;
+  -webkit-transition:width .3s linear;
+}
+
+#panneau1.animation{
+  width:100%;
+}
+
+#panneau2 {
+  z-index: 2;
+  width: 60px;
+  background-image: url('img/panneau2.png');
+
+  transition: width .3s linear;
+  -moz-transition:width .3s linear;
+  -webkit-transition:width .3s linear;
+  transition-delay: .1s;
+
+}
+
+#panneau2.animation{
+  width:98%;
+}
+
+#panneau3 {
+  z-index: 3;
+  width: 45px;
+  background-image: url('img/panneau3.png');
+
+  transition: width .3s linear;
+  -moz-transition:width .3s linear;
+  -webkit-transition:width .3s linear;
+transition-delay: .3s;
+
+
+}
+
+#panneau3.animation{
+  width:96%;
+}
+
+#menu-texte {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  transition-delay: .3s;
+
+
+}
+
+#menu-texte.animation {
+    opacity: 100;
+}
+
+#menu-texte h1{
+  font-size: 30px;
+}
+
+#menu-texte h2{
+  font-size: 20px;
+}
+
 .accueil-items{
   position: absolute;
   top: 50%;
@@ -310,12 +421,13 @@ a{
 }
 
 .accueil-items a{
-  width:390px;
-  height: 100vh;
+  width: auto;
+  height: auto;
   padding: 0px;
   margin: 0px;
   position: absolute;
   top: -360px;
+  left: -200px;
 
 }
 
@@ -323,9 +435,8 @@ a{
 /*  width:174px;*/
   position: absolute;
   top: -200px;
-  left: 0px;
+  left: -50px;
 }
-
 
 
 .tennis{
@@ -334,7 +445,7 @@ a{
   flex-shrink: 0;
   border-radius: 95.5px;
   position: absolute;
-  top: 539px;
+  top: 500px;
   left: 35px;
 }
 
@@ -348,11 +459,11 @@ a{
 }
 
 .capteurs{
-  width: 358px;
-  height: 308px;
+  width: 216px;
+  height: 250px;
   flex-shrink: 0;
   position: absolute;
-  top: 416px;
+  top: 445px;
   left: 170px;
 }
 
@@ -395,13 +506,195 @@ a{
 
 /* ---- SAUT-PAGE ------*/
 
-#saut_page{
-  width: 1000px;
-  height: 1000px;
-  background-image: url('img/saut.png');
+#saut-page{
+  height: 100vh;
+  padding: 0px;
+  margin: 0px;
+  background-image: url('img/accueil-fond-sansobj2.jpg');
+  background-size: cover;
+  background-position: center;
+
+}
+
+.saut-items{
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -35%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.regle-saut{
+
+}
+
+.saut-text{
+/*  width:174px;*/
+
+}
+
+.img-phyphox-saut{
+  position: relative;
+  top: -30px;
+}
+
+.bouton-saut{
+  width: 121px;
+  height: 31px;
+  flex-shrink: 0;
+  background-color: black;
+  border-radius: 33px;
+  text-align: center;
+  font-family: Lora;
+  color: #FFF;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  position: relative;
+  top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.bouton-saut a{
+  font-family: Lora;
+  color: #FFF;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration: none;
+}
+
+.saut-calcul{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#inputNumber {
+  width: 202px;
+  height: 31px;
+  background-color: #FFF;
+  outline: none;
+  border: none;
+  border-radius: 33px;
+  font-family: Lora;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  position: relative;
+  top: 50px;
+  display: flex;
+  justify-content: center; /* Centrer horizontalement */
+  align-items: center; /* Centrer verticalement */
+  /* padding: 0; */ /* Assurez-vous qu'aucun padding n'interfère */
+  margin: auto; /* Si besoin, pour centrer horizontalement */
+}
+
+
+.bouton-saut2{
+  width: 121px;
+  height: 31px;
+  flex-shrink: 0;
+  background-color: black;
+  border-radius: 33px;
+  text-align: center;
+  font-family: Lora;
+  color: #FFF;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  position: relative;
+  top: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+#resultat{
+  width: 184px;
+  height: 34px;
+  position: relative;
+  top: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #000;
+  text-align: center;
+  font-family: Lora;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+#record{
+  display: flex;
+  width: 166px;
+  height: 34px;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  top: 45px;
+  flex-shrink: 0;
+  color: #000;
+  text-align: center;
+  font-family: Lora;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.saut-sarah-saut{
+  width: 230px;
+  flex-shrink: 0;
+  position: relative;
+  top: 60px;
+}
+
+.retour-sac{
+  width: 160px;
+  flex-shrink: 0;
+  border-radius: 273px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: relative;
+  top: 60px;
+}
+
+/* ---- SPORT-PAGE ------*/
+
+
+/*#sport{
+  height: 100vh;
+  background-image: url('img/accueil-fond-sansobj2.jpg');
   background-size: cover;
   background-position: center;
 }
+
+.sport-items{
+  position: absolute;
+  top: 0%;
+  left: 45%;
+  transform: translate(-45%, 0%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}*/
 
 /*
 
