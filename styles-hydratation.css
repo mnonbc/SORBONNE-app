@@ -1,0 +1,249 @@
+/* ---- HYDRATATION-PAGE ------*/
+#hydratation{
+  height: 100vh;
+  background-image: url('img/fond-hydratation.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.eau{
+
+}
+
+.hydratation-items{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hydratation-text{
+  position: relative;
+}
+
+.bouton-hydratation{
+  width: 121px;
+  height: 31px;
+  flex-shrink: 0;
+  background-color: black;
+  border-radius: 33px;
+  text-align: center;
+  font-family: Lora;
+  color: #FFF;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  position: relative;
+  top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.bouton-hydratation a{
+  font-family: Lora;
+  color: #FFF;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration: none;
+}
+
+.icone-clignotant {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 18px;
+  color: #000;
+}
+
+.fond-icone {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #85cfe9;
+  opacity: 0;
+  z-index: 0;
+}
+
+.icone-texte {
+  z-index: 1;
+}
+
+.clignotant {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #85cfe9;
+  border: 1px solid #85cfe9;
+  display: none; /* Cacher par défaut */
+  z-index: 2;
+}
+
+.opacity-visible {
+  opacity: 1;
+}
+
+.opacity-hidden {
+  opacity: 0;
+}
+
+
+.details-container {
+  display: none; /* Masquer les détails par défaut */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  z-index: 999;
+}
+
+
+.categories {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.elementsHaut{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+
+.elementsHaut img{
+
+}
+
+.elementsBas{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.categoriesHaut{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+
+.categoriesBas{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.case {
+  width: 110px;
+  height: 110px;
+  flex-shrink: 0;
+  border-radius: 28px;
+  background: #FFF;
+  padding: 10px;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.case h2{
+  color: #000;
+  text-align: center;
+  font-family: Lora;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.boisson {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.fruit {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.laitier {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.cerealier {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.jauge {
+  position: relative;
+  width: 60%;
+  margin: 0 auto;
+  background-color: #FFF;
+  height: 54px;
+  overflow: hidden;
+}
+
+.jauge-remplissage {
+  background-color: #85cfe9;
+  height: 100%;
+}
+
+.pourcentage-remplissage{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #000;
+  text-align: center;
+  font-family: Lora;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  white-space: nowrap;
+  z-index: 1;
+
+}
+
+
+
+#message-box {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border: 2px solid #333;
+  padding: 20px;
+  z-index: 9999;
+}
