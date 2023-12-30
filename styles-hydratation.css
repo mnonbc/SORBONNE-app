@@ -19,6 +19,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  max-height: 95%;
 }
 
 .hydratation-text{
@@ -67,7 +68,7 @@
   align-items: center;
   cursor: pointer;
   position: absolute;
-  bottom: 0;
+  bottom: 50px;
   right: 0;
   font-size: 18px;
   color: #000;
@@ -107,6 +108,16 @@
 
 
 .details-container {
+  width: 271px;
+  height: 59px;
+  flex-shrink: 0;
+  color: #000;
+  text-align: center;
+  font-family: Lora;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
   display: none; /* Masquer les détails par défaut */
   position: fixed;
   top: 50%;
@@ -115,7 +126,7 @@
   background-color: white;
   padding: 20px;
   border: 1px solid #ccc;
-  z-index: 999;
+  z-index: 998;
 }
 
 
@@ -124,23 +135,34 @@
   flex-direction: column;
   align-items: center;
   margin-bottom: 10px;
+  position: relative;
+  bottom: 40px;
 }
 
 .elementsHaut{
   display: flex;
   flex-direction: row;
   justify-content: center;
-
+  max-width: 100%;
 }
 
 .elementsHaut img{
-
+  max-width: 100%;
+  height: auto;
+  cursor: pointer;
 }
 
 .elementsBas{
   display: flex;
   flex-direction: row;
   justify-content: center;
+  max-width: 100%;
+}
+
+.elementsBas img{
+  max-width: 100%;
+  height: auto;
+  cursor: pointer;
 }
 
 .categoriesHaut{
@@ -158,7 +180,7 @@
 
 .case {
   width: 110px;
-  height: 110px;
+  height: 90px;
   flex-shrink: 0;
   border-radius: 28px;
   background: #FFF;
@@ -173,7 +195,7 @@
   color: #000;
   text-align: center;
   font-family: Lora;
-  font-size: 14px;
+  font-size: 13px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -183,29 +205,38 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+  position: relative;
+  top: -10px;
 }
 
 .fruit {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  position: relative;
+  top: -10px;
 }
 
 .laitier {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  position: relative;
+  top: -10px;
 }
 
 .cerealier {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  position: relative;
+  top: -10px;
 }
 
 .jauge {
   position: relative;
   width: 60%;
+  bottom: 40px;
   margin: 0 auto;
   background-color: #FFF;
   height: 54px;
@@ -236,14 +267,20 @@
 
 
 
-#message-box {
-  display: none;
+#messageBox {
+  display: none; /* Masquer les détails par défaut */
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #fff;
-  border: 2px solid #333;
+  background-color: white;
   padding: 20px;
-  z-index: 9999;
+  border: 1px solid #ccc;
+  z-index: 999;
+}
+
+#messageBox p{
+  height: 36px;
+  width: 270px;
+  padding: 0px;
 }

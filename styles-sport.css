@@ -1,0 +1,145 @@
+#sport{
+  height: 100vh;
+  background-image: url('img/fond-sport.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.sport-items{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  max-height: 95%;
+}
+
+.sport-text{
+  position: relative;
+}
+
+.bouton-sport{
+  width: 121px;
+  height: 31px;
+  flex-shrink: 0;
+  background-color: black;
+  border-radius: 33px;
+  text-align: center;
+  font-family: Lora;
+  color: #FFF;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  position: relative;
+  top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.bouton-sport a{
+  font-family: Lora;
+  color: #FFF;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration: none;
+}
+
+#question-container {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#question-container p{
+  width: 281px;
+  height: 76px;
+  flex-shrink: 0;
+  padding-bottom: 20px;
+}
+
+#question-text{
+  width: 281px;
+height: 76px;
+flex-shrink: 0;
+padding: 20px;
+}
+
+#options {
+  list-style: none;
+  padding: 0;
+}
+
+#options li {
+  margin-bottom: 5px;
+}
+
+button {
+  width: 121px;
+  height: 31px;
+  flex-shrink: 0;
+  background-color: black;
+  border-radius: 33px;
+  text-align: center;
+  font-family: Lora;
+  color: #FFF;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  position: relative;
+  top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+#valider {
+  display: none;
+  font-family: Lora;
+  color: #FFF;
+  font-size: 14px;
+  font-style: normal;
+  text-align: center;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration: none;
+}
+
+.resultat-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Réglez la hauteur selon votre besoin */
+  text-align: center; /* Alignement du texte au centre */
+  position: relative;
+  top: 100px;
+}
+
+
+.resultat-container p{
+  width: 271px;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  right: 50px;
+
+}
+
+#resultat{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

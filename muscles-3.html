@@ -10,6 +10,8 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="script.js" defer></script>
+    <script src="script-muscles-jeu.js" defer></script>
+
 
     <title>Sportologie</title>
 
@@ -43,24 +45,30 @@
         </a>
         <div class="muscles-text">
           <h1>Fais fonctionner les <br>muscles de Sarah !</h1>
-          <p>Comprends la façon dont <br>fonctionne un muscle grâce <br>au ressort.</p>
+          <p>Fais sauter Sarah dans son <br>parcours de saut de haies !</p>
         </div>
 
-        <div class="ressort-saut" id="ressort">
-          <img src="img/muscles-ressort.png" alt="" class="ressort-img">
+        <canvas id="board">
+
+        </canvas>
+
+        <div class="ressort-saut2" id="ressort2">
+          <img src="img/muscles-ressort.png" alt="" class="ressort-img2">
         </div>
 
-        <div class="muscles-text2">
-          <p>Clique sur le ressort pour <br>voir comment il fonctionne <br>lors d’un saut.</p>
-        </div>
+        <button id="boutonSaut">Saut</button>
 
-        <div class="bouton-muscles">
-          <a href="muscles-2.html">Suite</a>
+        <div id="messageBox" style="display: none;">
+          <p><span id="messageText"></span></p>
+          <div onclick="recommencer()">
+            <h1>Recommencer</h1>
+          </div>
         </div>
+        
         </div>
       </div>
     </div>
-    <script src="script-muscles-ressort.js" defer></script>
+    <script src="script-muscles-ressort2.js" defer></script>
 
   </body>
 </html>

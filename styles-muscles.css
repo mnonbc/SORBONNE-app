@@ -1,0 +1,150 @@
+/* ---- MUSCLES-PAGE ------*/
+#muscles{
+  height: 100vh;
+  background-image: url('img/fond-muscles.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.ondes{
+  position: relative;
+  left: 40px;
+}
+
+.muscles-items{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  max-height: 95%;
+}
+
+.muscles-text{
+  position: relative;
+}
+
+/* Styles pour le ressort */
+.ressort-saut {
+  width: 100%;
+  height: 350px;
+  overflow: hidden; /* Pour cacher le débordement de l'image */
+  position: relative; /* Pour positionner l'image à l'intérieur */
+  bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ressort-img {
+  width: 118px;
+  height: 263px;
+  transition: transform 0.5s ease-in-out; /* Animation sur la transformation */
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.muscles-text2{
+  position: relative;
+  bottom: 60px;
+}
+
+
+.bouton-muscles{
+  width: 121px;
+  height: 31px;
+  flex-shrink: 0;
+  background-color: black;
+  border-radius: 33px;
+  text-align: center;
+  font-family: Lora;
+  color: #FFF;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.bouton-muscles a{
+  font-family: Lora;
+  color: #FFF;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration: none;
+}
+
+#board{
+  padding: 20px;
+  background-color: #FFF;
+  border-radius: 39px;
+}
+
+button{
+  width: 121px;
+  height: 75px;
+  flex-shrink: 0;
+  border-radius: 61px;
+  border: 1px solid #000;
+  background: #FFF;
+  font-family: Lora;
+  color: #000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration: none;
+  position: relative;
+  bottom: 50px;
+}
+
+
+/* Styles pour le ressort */
+.ressort-saut2 {
+  width: 100%;
+  height: 350px;
+  overflow: hidden; /* Pour cacher le débordement de l'image */
+  position: relative; /* Pour positionner l'image à l'intérieur */
+  bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 97;
+}
+
+.ressort-img2 {
+  width: 67px;
+  height: 149px;
+  transition: transform 0.5s ease-in-out; /* Animation sur la transformation */
+  max-width: 100%;
+  max-height: 100%;
+  z-index: 97;
+
+}
+
+#messageBox {
+  display: none; /* Masquer les détails par défaut */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  z-index: 999;
+}
+
+#messageBox p{
+  height: 36px;
+  width: 270px;
+  padding: 0px;
+}
