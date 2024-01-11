@@ -3,6 +3,8 @@ const jaugeRemplissage = document.querySelector('.jauge-remplissage');
 let remplissage = 0;
 const capaciteJauge = 575; // Capacité totale de la jauge en mL
 
+
+
 // Tableau contenant les quantités d'eau pour chaque élément
 const quantitesEau = {
   'Eau': 250,
@@ -52,13 +54,13 @@ function remplirJauge() {
  console.log('Pourcentage de la jauge :', pourcentageAffichage);
 
 
-  if (remplissage === 100) {
-    const messageText = document.getElementById('messageText');
-    messageText.textContent = 'Félicitations ! Vous avez constitué un goûter équilibré.';
-    const messageBox = document.getElementById('messageBox');
-    messageBox.style.display = 'block';// Affichage de la boîte de message
-    // Réinitialiser le jeu ou effectuer d'autres actions après avoir gagné
-  }
+ if (remplissage === 100) {
+   const messageText = document.getElementById('messageText');
+   messageText.textContent = 'Félicitations ! Vous avez constitué un goûter équilibré.';
+   const messageBox = document.getElementById('messageBox');
+   messageBox.style.display = 'block';// Affichage de la boîte de message
+   // Réinitialiser le jeu ou effectuer d'autres actions après avoir gagné
+ }
 }
 
 
@@ -156,5 +158,16 @@ function recommencer() {
   const messageBox = document.getElementById('messageBox');
   messageBox.style.display = 'none';
 
-  // Réinitialiser toutes les autres variables ou compteurs si nécessaire
+  // Réinitialiser d'autres variables ou compteurs si nécessaire
+
+  // Réinitialiser les détails et l'icône
+  const detailsText = document.querySelector('.details-text');
+  detailsText.textContent = '';
+
+  const fondIcone = document.querySelector('.fond-icone');
+  fondIcone.classList.remove('opacity-visible');
+  fondIcone.classList.add('opacity-hidden');
+
+  const iconeTexte = document.getElementById('icone-texte');
+  iconeTexte.textContent = '?';
 }

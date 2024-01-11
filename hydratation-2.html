@@ -29,8 +29,9 @@
       <div class="panneau" id="panneau3">
         <div id="menu-texte">
           <h1>Menu</h1>
-          <h2>A propos</h2>
-          <h2>Aide</h2>
+            <a href="a-propos.html">
+            <h2>A propos</h2>
+            </a>
         </div>
 
       </div>
@@ -45,7 +46,7 @@
         </a>
         <div class="hydratation-text">
 
-          <h1>Compose le goûter <br>de Sarah</h1>
+          <h1>Trouve la bonne<br>combinaison</h1>
           <p>Choisis 1 boisson et 3 aliments</p>
 
           <div class="icone-clignotant" onclick="afficherDetails()">
@@ -58,6 +59,17 @@
               <div class="details-text">
                 <!-- Texte des détails ici -->
                 Aucun élément séléctionné.
+              </div>
+            </div>
+            <div class="jauge">
+              <div class="jauge-remplissage" style="width: 0;"></div>
+            <div class="pourcentage-remplissage">0%</div>
+            </div>
+
+            <div id="messageBox" style="display: none;">
+              <p><span id="messageText"></span></p>
+              <div onclick="recommencer()">
+                <h1>Recommencer</h1>
               </div>
             </div>
         </div>
@@ -108,6 +120,10 @@
     </div>
   </div>
 
+
+
+
+
     <div class="categoriesHaut">
 
     <div class="case">
@@ -137,16 +153,7 @@
 </div>
 
 
-<div class="jauge">
-  <div class="jauge-remplissage" style="width: 0;"></div>
-<div class="pourcentage-remplissage">0%</div>
-</div>
-<div id="messageBox" style="display: none;">
-  <p><span id="messageText"></span></p>
-  <div onclick="recommencer()">
-    <h1>Recommencer</h1>
-  </div>
-</div>
+
 
         </div>
 
