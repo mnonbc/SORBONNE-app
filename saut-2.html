@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles-saut.css">
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="script.js" defer></script>
@@ -15,12 +17,13 @@
 
   </head>
   <body>
-    <div id="saut-page">
-      <a href="accueil.html"><img src="img/retour-sac.png" alt="" class="retour-sac"></a>
+    <div id="saut">
 
     <div class="page-transition">
-      <div class="container">
+      <a href="accueil.html"><img src="img/retour-sac.png" alt="" class="retour-sac"></a>
 
+
+      <div class="container">
 
       <div class="panneau" id="panneau1"></div>
       <div class="panneau" id="panneau2"></div>
@@ -31,34 +34,34 @@
             <h2>A propos</h2>
             </a>
         </div>
+
       </div>
+      <div id="menu" class="item">
+        <img src="img/menu-bouton3.png" alt="" width="50px">
 
-    <div id="menu" class="item">
-      <img src="img/menu-bouton3.png" alt="" width="40px">
-
-    </div>
-
+      </div>
       <div class="saut-items">
-
-        <img src="img/regle.png" alt="" class="regle-saut" width="60px">
-
-        <div class="saut-text">
-            <h1>Mesure la hauteur <br>de ton saut !</h1>
-
-            <div class="saut-calcul">
-              <input type="number" id="inputNumber" placeholder="Temps indiqué sur Phyphox">
-              <div class="bouton-saut2" onclick="calculer()">Calculer</div>
-              <p id="resultat"></p>
-              <p id="record"></p>
-
-            </div>
-
+        <a href="saut.html">
+        <img src="img/regle.png" class="regle" alt="" width="60px">
+        </a>
+        <div class="saut-text2">
+          <h1>Jouons ensemble à <br>Buzz l'éclair !</h1>
+          <p>Fais sauter Sarah !</p>
+        </div>
+        <div class="sarah-saut" id="sarahImageContainer">
+          <img src="img/sarah-idle-saut.png" alt="" height="280px">
+          <div class="bouton-saut-sarah">
+            <div id="changerImageBtn">Sauter</div>
+          </div>
         </div>
 
-            <img src="img/saut.gif" alt="" class="saut-sarah-saut" >
 
+        <div class="bouton-saut">
+          <a href="saut-3.html">Suite</a>
+        </div>
         </div>
       </div>
     </div>
+
   </body>
 </html>

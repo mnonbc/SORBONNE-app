@@ -1,10 +1,10 @@
-//DEBUT anim sarah saut------------------------------------------------
+//DEBUT anim antoine saut------------------------------------------------
 
 $(document).ready(function() {
   var boutonSaut = $('#changerImageBtn');
   var sarahImageContainer = $('#sarahImageContainer');
-  var images = ['img/sarah-avant-saut.png', 'img/sarah-saut.png', 'img/sarah-saut2.png', 'img/sarah-saut3.png', 'img/sarah-saut4.png'];
-  var originalImage = 'img/sarah-fin-saut.png';
+  var images = ['img/antoine-avant-saut.png', 'img/antoine-saut.png', 'img/antoine-saut2.png', 'img/antoine-saut3.png', 'img/antoine-saut4.png', 'img/antoine-saut5.png'];
+  var originalImage = 'img/antoine-fin-saut.png';
 
   var currentIndex = 0;
   var isAnimationInProgress = false;
@@ -57,21 +57,21 @@ document.addEventListener("DOMContentLoaded", function () {
   // Ajoutez un gestionnaire d'événements au clic sur l'image
   mesureDoigtsImage.addEventListener("click", function () {
     const messageText = document.getElementById('messageText');
-    messageText.textContent = 'Les doigts mesurent 2cm entre le sol et la trace de la main de Sarah.';
+    messageText.textContent = 'Les doigts mesurent 2cm entre le sol et la trace de la main d\'Antoine.';
     const messageBox = document.getElementById('messageBox');
     messageBox.style.display = 'block';
   });
 
   mesureDoubleDecimetreImage.addEventListener("click", function () {
     const messageText = document.getElementById('messageText');
-    messageText.textContent = 'Le double décimètre mesure 2,5m entre le sol et la trace de la main de Sarah.';
+    messageText.textContent = 'Le double décimètre mesure 2,4m entre le sol et la trace de la main d\'Antoine.';
     const messageBox = document.getElementById('messageBox');
     messageBox.style.display = 'block';
   });
 
   mesureMetreImage.addEventListener("click", function () {
     const messageText = document.getElementById('messageText');
-    messageText.textContent = 'Le mètre gradué en mm mesure 2,38m entre le sol et la trace de la main de Sarah.';
+    messageText.textContent = 'Le mètre gradué en mm mesure 2,37m entre le sol et la trace de la main d\'Antoine.';
     const messageBox = document.getElementById('messageBox');
     messageBox.style.display = 'block';
   });
