@@ -25,15 +25,8 @@
   width: 121px;
   height: 31px;
   flex-shrink: 0;
-  background-color: black;
+  background-color: #A02971;
   border-radius: 33px;
-  text-align: center;
-  font-family: Lora;
-  color: #FFF;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
   position: relative;
   top: 30px;
   display: flex;
@@ -50,6 +43,7 @@
   font-weight: 700;
   line-height: normal;
   text-decoration: none;
+  text-align: center;
 }
 
 #question-container {
@@ -68,47 +62,89 @@
 }
 
 #question-text{
-  width: 281px;
+  width: 244px;
 height: 76px;
+text-align: justify;
 flex-shrink: 0;
-padding: 20px;
+padding: 30px;
 }
 
 #options {
   list-style: none;
-  padding: 0;
+  padding: 30px;
 }
 
 #options li {
   margin-bottom: 5px;
 }
 
+.option-input {
+  display: none; /* Cachez les boutons radio par défaut */
+}
+
+.option-wrapper {
+  margin-bottom: 5px;
+}
+
+.option-wrapper label {
+  display: block;
+  width: 200px;
+  height: 20px;
+  flex-shrink: 0;
+  padding: 10px;
+  background-color: #FFF; /* Fond noir par défaut */
+  border-radius: 30px; /* Bords arrondis */
+  border: 2px solid #FFF; /* Couleur de survol lorsque la souris est dessus */
+  font-family: Lora;
+  color: #000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+  text-decoration: none;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Ajoutez une transition pour une animation en douceur */
+}
+
+.option-wrapper label:hover {
+  border: 2px solid #CCACDA; /* Couleur de survol lorsque la souris est dessus */
+}
+
+.option-wrapper input:checked + label {
+  background-color: #FFF; /* Fond blanc lorsque sélectionné */
+}
+
 button {
   width: 121px;
   height: 31px;
-  background-color: black;
+  background-color: #FFF;
   border-radius: 33px;
-  font-family: Lora;
-  color: #FFF;
-  font-size: 14px;
-  font-weight: 700;
-  text-align: center;
   line-height: 31px; /* Assure le centrage vertical */
   cursor: pointer;
   position: relative;
+  border-width: 0;
   top: 50px;
 }
 
 #valider {
   display: none;
   font-family: Lora;
-  color: #FFF;
+  color: #9F2971;
   font-size: 14px;
   font-style: normal;
   text-align: center;
   font-weight: 700;
   line-height: normal;
   text-decoration: none;
+}
+
+button:hover{
+  background-color: #F2B9DB;
 }
 
 .resultat-container {

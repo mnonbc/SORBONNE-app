@@ -30,15 +30,8 @@
   width: 121px;
   height: 31px;
   flex-shrink: 0;
-  background-color: black;
+  background-color: #0171B9;
   border-radius: 33px;
-  text-align: center;
-  font-family: Lora;
-  color: #FFF;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
   position: relative;
   top: 20px;
   display: flex;
@@ -55,6 +48,7 @@
   font-weight: 700;
   line-height: normal;
   text-decoration: none;
+  text-align: center;
 }
 
 .icone-clignotant {
@@ -290,4 +284,37 @@
   height: 36px;
   width: 270px;
   padding: 0px;
+}
+
+#messageBox img{
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+#messageBox h1{
+  width: 121px;
+  height: 31px;
+  background-color: #0171B9;
+  border-radius: 33px;
+  text-align: center;
+  color: #FFF;
+  font-size: 14px;
+  line-height: 31px; /* Ajout de la ligne pour centrer le texte verticalement */
+  cursor: pointer;
+  margin: 10px auto;
+}
+
+#messageBox h2{
+  width: 121px;
+  height: 31px;
+  background-color: #0171B9;
+  border-radius: 33px;
+  text-align: center;
+  color: #FFF;
+  font-size: 14px;
+  line-height: 31px; /* Ajout de la ligne pour centrer le texte verticalement */
+  cursor: pointer;
+  margin: 10px auto;
 }

@@ -57,21 +57,21 @@ document.addEventListener("DOMContentLoaded", function () {
   // Ajoutez un gestionnaire d'événements au clic sur l'image
   mesureDoigtsImage.addEventListener("click", function () {
     const messageText = document.getElementById('messageText');
-    messageText.textContent = 'Les doigts mesurent 2cm entre le sol et la trace de la main de Sarah.';
+    messageText.textContent = 'Les doigts mesurent 2cm entre les deux traces de main de Sarah.';
     const messageBox = document.getElementById('messageBox');
     messageBox.style.display = 'block';
   });
 
   mesureDoubleDecimetreImage.addEventListener("click", function () {
     const messageText = document.getElementById('messageText');
-    messageText.textContent = 'Le double décimètre mesure 2,5m entre le sol et la trace de la main de Sarah.';
+    messageText.textContent = 'Le double décimètre mesure 34,5cm entre les deux traces de main de Sarah.';
     const messageBox = document.getElementById('messageBox');
     messageBox.style.display = 'block';
   });
 
   mesureMetreImage.addEventListener("click", function () {
     const messageText = document.getElementById('messageText');
-    messageText.textContent = 'Le mètre gradué en mm mesure 2,38m entre le sol et la trace de la main de Sarah.';
+    messageText.textContent = 'Le mètre gradué en mm mesure 34,48cm entre les deux traces de main de Sarah.';
     const messageBox = document.getElementById('messageBox');
     messageBox.style.display = 'block';
   });

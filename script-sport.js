@@ -28,11 +28,11 @@ const questions = [
     options: ["30min par semaine ou moins", "Entre 1h et 3h par semaine", "Entre 3h et 6h par semaine", "7h ou plus"]
   },
   {
-    question: "8/ Pendant ton temps de loisir, en dehors de l’école et de tes activités sportives en club, combien de temps par semaine pratiques-tu une activité physique d’intensité modérée ou élevée (danse, vélo, piscine, VTT, course à pied, …)\u00A0?",
+    question: "8/ Pendant ton temps de loisir, combien de temps par semaine pratiques-tu une activité physique d’intensité modérée ou élevée (danse, vélo, piscine, VTT, course à pied, …)\u00A0?",
     options: ["Je n’en fais pas", "Entre 30min et 2h par semaine", "Entre 2h et 5h par semaine", "6h par semaine ou plus"]
   },
   {
-    question: "9/ Pendant la semaine, en moyenne par jour, combien de temps passes-tu devant les écrans\u00A0? (Pour t’aider, pense au temps que tu passes devant les écrans avant d’aller en cours, pendant tes pauses, en rentrant de l’école ou avant de te coucher)",
+    question: "9/ Pendant la semaine, en moyenne par jour, combien de temps passes-tu devant les écrans\u00A0? ",
     options: ["Plus de 3h par jour", "3h par jour", "2h par jour", "Moins d’1h par jour"]
   },
   {
@@ -60,16 +60,30 @@ function afficherQuestion() {
     input.id = `option_${index}`;
     input.name = 'question';
     input.value = option;
+    input.classList.add('option-input'); // Ajoutez une classe aux options
 
     const label = document.createElement('label');
     label.setAttribute('for', `option_${index}`);
     label.textContent = option;
 
-    const br = document.createElement('br');
+    const wrapper = document.createElement('div');
+    wrapper.classList.add('option-wrapper');
+    wrapper.appendChild(input);
+    wrapper.appendChild(label);
 
-    form.appendChild(input);
-    form.appendChild(label);
-    form.appendChild(br);
+    form.appendChild(wrapper);
+
+    // Ajoutez un écouteur d'événements pour chaque option
+    input.addEventListener('change', () => {
+      clearOptionStyles();
+      if (input.checked) {
+                  label.style.backgroundColor = '#CCACDA';
+                  label.style.border = '2px solid #CCACDA'; // Changez la couleur de la bordure ici
+              } else {
+                  label.style.backgroundColor = '#FFF';
+                  label.style.border = '2px solid #FFF'; // Changez la couleur de la bordure ici
+              }
+    });
   });
 
   validerBtn.style.display = 'block';
@@ -80,6 +94,15 @@ function afficherQuestion() {
     validerBtn.textContent = 'Valider';
   }
 }
+
+function clearOptionStyles() {
+  const labels = document.querySelectorAll('.option-wrapper label');
+  labels.forEach((label) => {
+    label.style.backgroundColor = '#FFF'; // Fond noir par défaut
+  });
+}
+
+
 
 function suivant() {
   const options = document.querySelectorAll('input[type="radio"]:checked');
