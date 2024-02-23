@@ -148,24 +148,20 @@ button:hover{
 }
 
 .resultat-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh; /* Réglez la hauteur selon votre besoin */
   text-align: center; /* Alignement du texte au centre */
   position: relative;
-  top: 100px;
+  top: 10px;
 }
 
 
 .resultat-container p{
   width: 271px;
+  height: auto;
   list-style: none;
-  margin: 0px;
+  margin: 20px;
   padding: 0px;
   position: relative;
-  right: 50px;
-
+  text-align: justify;
 }
 
 #resultat{

@@ -127,6 +127,7 @@
 }
 
 
+
 #messageBox {
   display: none; /* Masquer les détails par défaut */
   position: fixed;
@@ -239,7 +240,7 @@ height: auto;
 }
 
 .saut-exp-txt-instru {
-  margin: 20px;
+  margin: 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -255,4 +256,29 @@ font-weight: 400;
 line-height: normal;
 width: 280px;
 height: auto;
+}
+
+.bouton-saut-instru{
+  width: 121px;
+  height: 31px;
+  flex-shrink: 0;
+  background-color: #B7DDCE;
+  border-radius: 33px;
+  position: relative;
+  top: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.bouton-saut-instru a{
+  font-family: Lora;
+  color: #43906C;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration: none;
+  text-align: center;
 }

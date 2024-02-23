@@ -1,7 +1,7 @@
 
 const jaugeRemplissage = document.querySelector('.jauge-remplissage');
 let remplissage = 0;
-const capaciteJauge = 575; // Capacité totale de la jauge en mL
+const capaciteJauge = 500; // Capacité totale de la jauge en mL
 
 
 
