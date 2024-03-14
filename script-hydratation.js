@@ -96,7 +96,7 @@ function choisirElement(categorie, elementIndex) {
     default:
       break;
   }
-
+/*
   const clignotant = document.getElementById('clignotant');
   const detailsText = document.querySelector('.details-text');
   const fondIcone = document.querySelector('.fond-icone');
@@ -118,7 +118,7 @@ function choisirElement(categorie, elementIndex) {
 
 
   detailsText.textContent = detailsTexteParElement[elementChoisi];
-
+*/
 
 
   const categorieDiv = document.querySelector(`.${categorie}`);

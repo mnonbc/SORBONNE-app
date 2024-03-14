@@ -46,6 +46,27 @@
   text-align: center;
 }
 
+
+.bouton-sport2{
+  width: 121px;
+  height: 31px;
+  background-color: #A02971;
+  border-radius: 33px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bouton-sport2 a{
+  font-family: Lora;
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+}
+
+
 #question-container {
   margin-bottom: 20px;
   display: flex;
@@ -168,4 +189,11 @@ button:hover{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#retour-btn{
+  position: relative;
+  top: 30px;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }

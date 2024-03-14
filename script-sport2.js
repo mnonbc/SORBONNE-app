@@ -135,9 +135,16 @@ function afficherResultat() {
   const questionContainer = document.getElementById('question-container');
   const resultat = document.getElementById('resultat');
   const resultatContainer = document.querySelector('.resultat-container');
+  const retourBtn = document.getElementById('retour-btn');
+
+  document.getElementById('retour-btn').addEventListener('click', function() {
+      window.location.href = 'sport.html';
+  });
 
   questionContainer.style.display = 'none';
   resultat.style.display = 'block';
+  retourBtn.style.display = 'flex';
+
 
   let score = 0;
   let score2 = 0;
@@ -162,9 +169,9 @@ function afficherResultat() {
 
   // Détermination de la réponse en fonction du score
   if (score < 420) {
-    resultHTML += "<p>Tu pratiques des activités physiques régulières et ceci va avoir plusieurs les bienfaits pour ta santé&nbsp;! N’hésite pas à en faire plus, si tu en as envie, car toute activité supplémentaire est bénéfique pour ta santé.</p>";
+    resultHTML +=  "<p>Il semble que tu ne bouges pas assez&nbsp;! Il faut essayer de bouger davantage. Profites des différentes occasions (à l’école, lors de tes déplacements…) pour essayer de bouger&nbsp;! 60 minutes par jour sont recommandées, fractionnées par tranches de 10 minutes.</p>";
   } else if (score >= 420 && score <= 600) {
-    resultHTML += "<p>Il semble que tu ne bouges pas assez&nbsp;! Il faut essayer de bouger davantage. Profites des différentes occasions (à l’école, lors de tes déplacements…) pour essayer de bouger&nbsp;! 60 minutes par jour sont recommandées, fractionnées par tranches de 10 minutes.</p>";
+    resultHTML +="<p>Tu pratiques des activités physiques régulières et ceci va avoir plusieurs bienfaits pour ta santé&nbsp;! N’hésite pas à en faire plus, si tu en as envie, car toute activité supplémentaire est bénéfique pour ta santé.</p>";
   } else if (score > 600) {
     resultHTML += "<p>Super, tu es très actif&nbsp;!! Continue ainsi&nbsp;! Tu pratiques des activités physiques régulières et ceci va avoir plusieurs les bienfaits pour ta santé&nbsp;! N’hésite pas à en faire plus, si tu en as envie, car toute activité supplémentaire est bénéfique pour ta santé.</p>";
   } else {

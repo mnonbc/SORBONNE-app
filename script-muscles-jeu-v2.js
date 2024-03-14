@@ -71,7 +71,7 @@ window.onload = function() {
 		gameData.anim[i].src = imgName;
 	}
 	gameData.sarahImg = new Image();
-	
+
 	gameData.sarahImg = gameData.anim[gameData.animIdx];
 	gameData.sarahImg.onload = function(){
 		gameData.context.drawImage(gameData.sarahImg, gameData.sarah.x, gameData.sarah.y, gameData.sarah.width, gameData.sarah.height);
@@ -114,7 +114,7 @@ function start() {
 
 	// Relancer le jeu
 	requestAnimationFrame(update);
-	
+
 	gameData.imageRessort.style.transform = "scaleY(1)"; // Retour à la taille initiale après un autre délai
 	setTimeout(place1stObstacle, 2000); //1000milliseconds = 1sec
 }
@@ -160,7 +160,7 @@ function update(){
 		let obstacle = gameData.obstaclesArray[i];
 		obstacle.x += gameData.velocityX;
 		gameData.context.drawImage(obstacle.img, obstacle.x, obstacle.y, obstacle.width, obstacle.height);
-		
+
 		if (detectCollision(sarahBoundingBox, obstacle)) {
 			gameData.gameOver = true;
 			// cancel all next placements
@@ -202,7 +202,7 @@ function keyUp(e) {
 	contraction_duration = new Date() - gameData.contraction_starttime;
 	if (contraction_duration > 1000) e.preventDefault();
 	force = Math.min(1, contraction_duration / 1000 / 1.5); // duration get max force
-	
+
 	sarahJump(force)
 }
 
@@ -253,7 +253,7 @@ function sarahJump(force) { // force entre 0 et 1)
 
 		setTimeout(() => {
 			gameData.imageRessort.style.transform = "scaleY(1)"; // Retour à la taille initiale après un autre délai
-		}, 600); 
+		}, 600);
 
 		//jump
 		gameData.velocityY = -gameData.jumpAcceleration * force;
@@ -306,9 +306,9 @@ function placeObstacle(placeObstacleChance = 0) {
 
 function detectCollision(s, o) {
 	// show bounding box
-	// gameData.context.strokeRect(s.x, s.y,  s.width,  s.height); 
-	// gameData.context.strokeRect(o.x + gameData.obstableNonCollisionZone * o.width, o.y + o.height - o.collisionHeight,  o.width - gameData.obstableNonCollisionZone * o.width,  o.height); 
-	return s.x + s.width > o.x + gameData.obstableNonCollisionZone * o.width && s.x < o.x + o.width &&   
+	// gameData.context.strokeRect(s.x, s.y,  s.width,  s.height);
+	// gameData.context.strokeRect(o.x + gameData.obstableNonCollisionZone * o.width, o.y + o.height - o.collisionHeight,  o.width - gameData.obstableNonCollisionZone * o.width,  o.height);
+	return s.x + s.width > o.x + gameData.obstableNonCollisionZone * o.width && s.x < o.x + o.width &&
            s.y + s.height > o.y + o.height - o.collisionHeight && s.y < o.y + o.height;
 }
 
@@ -323,6 +323,3 @@ function recommencer() {
 
 	start();
 }
-
-
-
