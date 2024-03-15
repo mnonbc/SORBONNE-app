@@ -9,7 +9,7 @@ body {
 }
 
 /*@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap')
-*/
+
 
 @font-face {
     font-family: 'Lora';
@@ -21,9 +21,9 @@ body {
          url('font/Lora-Regular.ttf') format('ttf'),
          url('font/Lora-SemiBold.ttf') format('ttf'),
          url('font/Lora-SemiBoldItalic.ttf') format('ttf');
-    font-weight: normal; /* ou bold, etc. */
-    font-style: normal; /* ou italic, etc. */
-}
+    font-weight: normal;
+    font-style: normal;
+}*/
 
 .not-user-selectable {
 	pointer-events:none;
@@ -39,7 +39,6 @@ body {
     /* Par exemple, augmenter la taille des polices ou ajuster les marges/paddings */
 }
 
-/* Définition d'une animation de fondu */
 @keyframes fade {
   from { opacity: 0; }
   to { opacity: 1; }
