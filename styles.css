@@ -8,6 +8,23 @@ body {
   background-origin: content-box;*/
 }
 
+/*@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap')
+*/
+
+@font-face {
+    font-family: 'Lora';
+    src: url('font/Lora-Bold.ttf') format('ttf'),
+         url('font/Lora-BoldItalic.ttf') format('ttf'),
+         url('font/Lora-Italic.ttf') format('ttf'),
+         url('font/Lora-Medium.ttf') format('ttf'),
+         url('font/Lora-MediumItalic.ttf') format('ttf'),
+         url('font/Lora-Regular.ttf') format('ttf'),
+         url('font/Lora-SemiBold.ttf') format('ttf'),
+         url('font/Lora-SemiBoldItalic.ttf') format('ttf');
+    font-weight: normal; /* ou bold, etc. */
+    font-style: normal; /* ou italic, etc. */
+}
+
 .not-user-selectable {
 	pointer-events:none;
 	-webkit-user-select: none;
@@ -15,7 +32,7 @@ body {
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
-} 
+}
 
 @media only screen and (max-width: 600px) {
     /* Styles spécifiques pour les appareils mobiles */
