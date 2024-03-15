@@ -55,7 +55,7 @@ body {
 h1{
   color: #000;
   text-align: center;
-  font-family: Lora;
+  font-family: 'Lora';
   font-size: 25px;
   font-style: normal;
   font-weight: 600;
@@ -65,7 +65,7 @@ h1{
 h2{
   color: #000;
   text-align: center;
-  font-family: Lora;
+  font-family: 'Lora';
   font-size: 14px;
   font-style: italic;
   font-weight: 400;
@@ -75,7 +75,7 @@ h2{
 h3{
   color: #000;
   text-align: center;
-  font-family: Lora;
+  font-family: 'Lora';
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
@@ -88,7 +88,7 @@ p{
   flex-shrink: 0;
   color: #000;
   text-align: center;
-  font-family: Lora;
+  font-family: 'Lora';
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
